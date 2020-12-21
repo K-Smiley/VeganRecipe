@@ -1,0 +1,87 @@
+html {
+  /* Setting a base font size of 10px give us easier rem calculations
+     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+   */
+  font-size: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+p , #img-caption { 
+   padding: 20px;
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+
+#main {
+  margin: 30px 8px;
+  padding: 15px;
+}
+
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+
+#img-div, footer  {
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color: #cc7722;
+  color: white;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+
+ul {
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
+}
+
+#main-recipe {
+  max-width: 650px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 80px;
+}
+
+
+
+#suggestions {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+ font-style: italic;
+}
+
+a {
+  color: yellow;
+}
+
+a:visited {
+  color: green;
+}
